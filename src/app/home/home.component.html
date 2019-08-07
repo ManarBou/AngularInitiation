@@ -1,0 +1,41 @@
+<!-- Exemple 1 -->
+<!-- <h1>Home</h1>
+<button (click)="firstClick()">Click me</button> -->
+
+<!-- Exemple 2 -->
+<!-- <h1 [class.red]="h1Style">Home</h1>
+<button (click)="firstClick()">Click me</button> -->
+
+<!-- Exemple 3 -->
+<!-- <h1 [ngClass]="{
+    'red': h1Style,
+    'large': !h1Style
+  }">Home</h1>
+<button (click)="firstClick()">Click me</button> -->
+
+<!-- Exemple 4 -->
+<!-- <h1 [style.color]="h1Style ? 'red': 'black'">Home</h1>
+<button (click)="firstClick()">Click me</button> -->
+
+<!-- Exemple 5 -->
+<!-- <h1 [ngStyle]="{
+    'color': h1Style ? 'red' : 'black',
+    'font-size': !h1Style ? '1em' : '4em'
+  }">Home</h1>
+<button (click)="firstClick()">Click me</button> -->
+
+<!-- Exemple 6 : data service -->
+<!-- <h1 [ngStyle]="{
+    'color': h1Style ? 'red' : 'black',
+    'font-size': !h1Style ? '1em' : '4em'
+  }">Home</h1>
+<button (click)="firstClick()">Click me</button> -->
+
+<!-- Exemple 7 : Http -->
+<h1>Users</h1>
+<ul *ngIf="users">
+    <li *ngFor="let user of users.data">
+        <img [src]="user.avatar">
+        <p>{{ user.first_name }} {{ user.last_name }}</p>
+    </li>
+</ul>
